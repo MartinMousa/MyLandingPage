@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MartinMousa Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fc;
+      color: #333;
+      font-family: 'Open Sans', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    .navbar {
+      background-color: #003366; /* Classic navy blue */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-brand {
+      color: #ffffff;
+      font-family: 'Merriweather', serif;
+      font-weight: bold;
+    }
+
+    .navbar-brand:hover {
+      color: #e0e0e0;
+    }
+
+    .navbar-nav .nav-link {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #dcdcdc;
+    }
+
+    .jumbotron {
+      background: linear-gradient(135deg, #003366, #004080); /* Classic navy blue gradient */
+      color: #ffffff;
+      padding: 100px 0;
+      text-align: center;
+      border-radius: 0 0 30px 30px;
+    }
+
+    .jumbotron img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      margin-bottom: 20px;
+      border: 3px solid #ffffff;
+      transition: transform 0.3s ease;
+    }
+
+    .jumbotron img:hover {
+      transform: scale(1.1);
+    }
+
+    .jumbotron h1, .jumbotron h2 {
+      margin-bottom: 20px;
+      font-family: 'Merriweather', serif;
+    }
+
+    .progress-bar {
+      background-color: #003366; /* Classic navy blue */
+    }
+
+    .footer {
+      background-color: #222222; /* Dark gray */
+      color: #ffffff;
+      border-top: 1px solid #444444;
+      box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .card {
+      border: 1px solid #dddddd;
+      transition: box-shadow 0.3s ease-in-out, transform 0.3s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transform: translateY(-5px);
+    }
+
+    .card-header {
+      background: #f1f1f1;
+      border-bottom: 1px solid #dddddd;
+    }
+
+    .card-body {
+      padding: 1.25rem;
+    }
+
+    .btn-primary {
+      background-color: #003366; /* Classic navy blue */
+      border: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s, box-shadow 0.3s;
+    }
+
+    .btn-primary:hover {
+      background-color: #002244; /* Darker navy */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-primary:focus, .btn-primary:active {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .form-control:focus {
+      border-color: #003366;
+      box-shadow: 0 0 0 0.2rem rgba(0, 51, 102, 0.25);
+    }
+
+    .testimonial-section {
+      background: #ffffff;
+      padding: 60px 0;
+    }
+
+    .testimonial-card {
+      border: 1px solid #dddddd;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#">Martin Mousa</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="hero" class="jumbotron">
+    <div class="container">
+      <img src="https://avatars.githubusercontent.com/u/95289664?s=400&u=93e0b2f9070a4ac210fc179ceaeb36cd17186424&v=4" alt="MyPhoto">
+      <h1 class="display-4">Martin Nader Mousa</h1>
+      <h2 class="lead">Aspiring Accountant & Front-End Developer</h2>
+      <a href="#contact" class="btn btn-primary btn-lg">Hire Me</a>
+    </div>
+  </section>
+
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">About Me</h2>
+      <p>
+        Hi, I'm Martin Nader Mousa, an ambitious accounting student with a keen interest in integrating technology
+        with finance. I am pursuing a Bachelor of Commerce with a major in Accounting at Helwan University. My
+        background includes hands-on experience in accounting and financial analysis, which I am excited to combine with
+        my passion for programming.
+      </p>
+      <p>
+        I enjoy solving complex problems and developing solutions that enhance productivity and financial management. My
+        goal is to merge my accounting expertise with technological skills to create innovative solutions that drive
+        organizational success.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Skills</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <h3>Front-End</h3>
+          <div class="progress mb-3">
+            <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
+              aria-valuemax="100">HTML</div>
+          </div>
+          <div class="progress mb-3">
+            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
+              aria-valuemax="100">CSS</div>
+          </div>
+          <div class="progress mb-3">
+            <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0"
+              aria-valuemax="100">JavaScript</div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h3>Financial & Analytical Skills</h3>
+          <div class="progress mb-3">
+            <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+              aria-valuemax="100">Financial Analysis</div>
+          </div>
+          <div class="progress mb-3">
+            <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0"
+              aria-valuemax="100">Budgeting</div>
+          </div>
+          <div class="progress mb-3">
+            <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0"
+              aria-valuemax="100">Reporting</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="bg-light py-5">
+    <div class="container">
+      <h2 class="mb-4">Projects</h2>
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <div class="card testimonial-card">
+            <div class="card-body">
+              <h3 class="card-title">Portfolio Website</h3>
+              <p class="card-text">Just like this one.</p>
+              <a href="#" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card testimonial-card">
+            <div class="card-body">
+              <h3 class="card-title">Todo List App</h3>
+              <p class="card-text">I am currently engaged in developing an advanced to-do list application, which combines
+                my skills in programming with my background in accounting. This project is designed to enhance task
+                management through advanced features such as automated reminders, priority settings, and integration with
+                financial tracking tools. By applying programming techniques, I aim to create a tool that improves
+                productivity and efficiency, reflecting my expertise in financial analysis and reporting.</p>
+              <a href="#" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <!-- Add more project sections as needed -->
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Contact Me</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer text-center py-3">
+    <p>&copy; 2024 Martin Mousa. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz4fnFO9gybIV9+o3K7oCIOqU7ek5ki7MQT3yyeKwjqG1f5Ut0P0mc6a5F" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-qJD7eB1WT0S7YkVV0fXVnhYStHkQv7eKt3URyYpI8t91H4SzF7p4ew36h/5sykGh" crossorigin="anonymous"></script>
+</body>
+
+</html>
